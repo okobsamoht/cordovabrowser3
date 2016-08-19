@@ -39,7 +39,7 @@
     <splash src="img/logo.png" />
     
     <access origin="*"/>
-
+    <plugin name="cordova-plugin-crosswalk-webview" version="1.6.1" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <allow-navigation href="*" />
     <allow-intent href="http://*/*" />
