@@ -1,16 +1,56 @@
-<?xml version='1.0' encoding='utf-8'?>
-<widget id="de.baach.cordovabrowser3" version="0.0.2 (cordova 3.4)" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>CordovaBrowser 3</name>
-    <description>
-        Allows to run remote cordova/phonegap apps with full access to all cordova apis. Has a refresh button. Upgrade of https://play.google.com/store/apps/details?id=com.eas.cordova.browser to cordova 3.4.
-    </description>
-    <author email="mail@baach.de" href="http://baach.de">
-        Joerg Baach
-    </author>
-    <content src="index.html" />
-    <access origin="*" />
-    <feature name="Loader">
-        <param name="android-package" value="de.baach.cordovabrowser3.Loader" />
-    </feature>
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "samoht.cordova.tester"
+        versionCode = "1"
+        version     = "1.0.0" >
 
+    <name>Cordova Tester</name>
+
+    <description>
+       Tester d'application cordova
+    </description>
+
+    <author href="http://samoht.web44.net" email="bokothomas@yahoo.fr">
+        Thomas BOKO
+    </author>
+
+    <platform name="ios" />
+    <platform name="android" />
+    <platform name="winphone" />
+    
+
+    <preference name="orientation"                value="default" />
+    <preference name="target-device"              value="universal" />
+    <preference name="fullscreen"                 value="false" />
+    <preference name="webviewbounce"              value="true" />
+    <preference name="prerendered-icon"           value="true" /> 
+    <preference name="stay-in-webview"            value="false" />
+    <preference name="ios-statusbarstyle"         value="black-opaque" />
+    <preference name="detect-data-types"          value="true" />
+    <preference name="exit-on-suspend"            value="false" />
+    <preference name="show-splash-screen-spinner" value="true" />
+    <preference name="auto-hide-splash-screen"    value="true" />
+    <preference name="disable-cursor"             value="false" />
+    <preference name="android-installLocation"    value="auto" />
+
+    <plugin name="cordova-plugin-crosswalk-webview" version="1.6.1">
+        <param name="XWALK_MODE" value="lite">
+    </plugin>
+    
+    <icon src="img/logo.png" />
+
+    <splash src="img/logo.png" />
+    
+    <access origin="*"/>
+
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <allow-navigation href="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    
 </widget>
