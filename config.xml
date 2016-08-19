@@ -34,10 +34,6 @@
     <preference name="disable-cursor"             value="false" />
     <preference name="android-installLocation"    value="auto" />
 
-    <plugin name="cordova-plugin-crosswalk-webview" version="1.6.1">
-        <param name="XWALK_MODE" value="lite">
-    </plugin>
-    
     <icon src="img/logo.png" />
 
     <splash src="img/logo.png" />
